@@ -561,3 +561,98 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ----------------------------------------------------------------
+    Dodao Almedin Rabic - Dark Mode
+    ---------------------------------------------------------------- */
+body.dark-mode {
+    background-color: #050a14 !important;
+    /* Ekstremno tamno plava, skoro crna */
+    background-image:
+        radial-gradient(circle at 15% 50%, rgba(37, 99, 176, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 85% 20%, rgba(201, 168, 76, 0.08) 0%, transparent 50%) !important;
+    color: #e2e8f0 !important;
+}
+
+/* Header */
+body.dark-mode .glavni-header {
+    background: rgba(5, 10, 20, 0.95) !important;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.15) !important;
+}
+
+body.dark-mode .logo h1,
+body.dark-mode .glavna-navigacija ul li a {
+    color: #f8f6f1 !important;
+}
+
+body.dark-mode .logo h1 span {
+    color: var(--zlatna-svijetla) !important;
+}
+
+body.dark-mode .glavna-navigacija ul li a:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Bočni meni (Sidebar) */
+body.dark-mode .bocni-meni {
+    background: #091122 !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+body.dark-mode .bocni-meni h3 {
+    color: #a0aec0 !important;
+}
+
+body.dark-mode .bocni-meni button {
+    background: transparent !important;
+    color: #e2e8f0 !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode .bocni-meni button:hover {
+    border-color: var(--plava-srednja) !important;
+    color: white !important;
+}
+
+body.dark-mode .bocni-meni button.aktivan {
+    background: var(--plava-tamna) !important;
+    border-color: var(--plava-tamna) !important;
+    color: var(--zlatna-svijetla) !important;
+}
+
+/* Kartice */
+body.dark-mode .kartica {
+    background: #091122 !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+body.dark-mode .kartica:hover {
+    box-shadow: 0 8px 30px rgba(13, 27, 62, 0.8) !important;
+}
+
+body.dark-mode .kartica h3 {
+    color: var(--zlatna-svijetla) !important;
+}
+
+body.dark-mode .kartica p {
+    color: #cbd5e1 !important;
+}
+
+/* Naslovna sekcija ostaje ista, samo pojacavamo sjenku */
+body.dark-mode .glavni-sadrzaj section:first-child article {
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* GitHub Link */
+body.dark-mode .github-link a {
+    background: rgba(201, 168, 76, 0.1) !important;
+    color: var(--zlatna-svijetla) !important;
+    border: 1px solid rgba(201, 168, 76, 0.4) !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .github-link a:hover {
+    background: var(--zlatna) !important;
+    color: #050a14 !important;
+}
