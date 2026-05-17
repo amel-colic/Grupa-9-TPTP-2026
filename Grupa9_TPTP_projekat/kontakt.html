@@ -24,38 +24,57 @@
             <h2>Pošaljite nam pitanja</h2>
             <p>Sva polja je obavezzno ispuniti. Naš tim će vam odgovoriti putem emaila.</p>
 
-            <form id="kontaktForma" novalidate> <!-- Koristen AI kako bi pomogao u automatskoj provjeri pretrazivaca, te je predlozio da u formu stavim novalidate kako bi se iskljucila automatska provjera-->
-                
-                <div class="unos">
-                    <label for="ime">Ime i prezime:</label>
-                    <input type="text" id="ime" name="ime">
-                    <span id="imeGreska" class="greska-tekst"></span>
-                </div>
+            <form id="kontaktForma" novalidate>
+    <div class="unos">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime">
+        <span id="imeGreska" class="greska-tekst"></span>
+    </div>
 
-                <div class="unos">
-                    <label for="korisnikEmail">Email adresa:</label>
-                    <input type="email" id="korisnikEmail" name="korisnikEmail">
-                    <span id="emailGreska" class="greska-tekst"></span>
-                </div>
+    <div class="unos">
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime">
+        <span id="prezimeGreska" class="greska-tekst"></span>
+    </div>
 
-                <div class="unos">
-                    <label for="telefon">Broj telefona:</label>
-                    <input type="text" id="telefon" name="telefon">
-                    <span id="telGreska" class="greska-tekst"></span>
-                </div>
+    <div class="unos">
+        <label for="korisnikEmail">Email adresa:</label>
+        <input type="email" id="korisnikEmail" name="korisnikEmail">
+        <span id="emailGreska" class="greska-tekst"></span>
+    </div>
 
-                <div class="unos">
-                    <label for="poruka">Vaša poruka:</label>
-                    <textarea id="poruka" rows="6"></textarea>
-                    <span id="porukaGreska" class="greska-tekst"></span>
-                </div>
+    <div class="unos">
+        <label for="telefon">Broj telefona:</label>
+        <input type="text" id="telefon" name="telefon">
+        <span id="telGreska" class="greska-tekst"></span>
+    </div>
 
-                <div class="akcije">
-                    <button type="submit">Pošalji poruku</button>
-                    <button type="reset" id="ponistiSve">Očisti formu</button>
-                </div>
+    <div class="unos">
+        <label for="tema">Šta vas zanima?</label>
+        <select id="tema">
+            <option value="">-- Odaberite temu --</option>
+            <option value="izlet">Jednodnevni izlet</option>
+            <option value="vikend">Vikend avantura</option>
+            <option value="smjestaj">Upit za smještaj</option>
+        </select>
+        <span id="temaGreska" class="greska-tekst"></span>
+    </div>
 
-            </form>
+    <div class="unos">
+        <label for="poruka">Vaša poruka:</label>
+        <textarea id="poruka" rows="6"></textarea>
+        <span id="porukaGreska" class="greska-tekst"></span>
+    </div>
+
+    <div class="akcije">
+        <button type="submit">Pošalji poruku</button>
+        <button type="reset" id="ponistiSve">Očisti formu</button>
+    </div>
+</form>
+
+<div id="uspjeh" style="display:none;">
+    <h3 id="porukaUspjehaTekst"></h3>
+</div>
 
             <div id="uspjeh" style="display:none;">
                 <h3>Hvala vam! Vaša poruka je uspješno poslana.</h3>
